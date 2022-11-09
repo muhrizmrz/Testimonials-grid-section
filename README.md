@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/muhrizmrz/Testimonials-grid-section)
-- Live Site URL: (https://github.com/muhrizmrz/Testimonials-grid-section)
+- Live Site URL: (https://muhrizmrz.github.io/Testimonials-grid-section)
 
 ## My process
 
