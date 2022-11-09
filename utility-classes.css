@@ -1,0 +1,27 @@
+.grid {
+    display: grid;
+}
+.col-span-2 {
+    grid-column: span 2/span 2;
+}
+.row-span-2 {
+    grid-row-start: span 2;
+}
+.text-sm{
+    font-size: smaller;
+}
+.text-md{
+    font-size: larger;
+}
+.flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.space-y-4 > *:not(:first-child) {
+    margin-top: 1rem;
+}
+.space-x-4 > *:not(:first-child) {
+    margin-left: 1rem;
+}

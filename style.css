@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+    max-height: fit-content;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+}
+
+section {
+    width: 80vw;
+    min-width: 390px;
+    max-width: 1500px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+article {
+    padding: 30px;
+    border-radius: 0.6rem;
+}
+article img {
+    border-radius: 50%;
+    width: 35px;
+    border: 2px solid white;
+}
+.light  h4 {
+    color: white;
+    opacity: 70%;
+}
+.light  div p:nth-child(2){
+    color: white;
+    opacity: 50%;
+}
+.light  p:nth-child(2) {
+    color: white;
+    font-weight: bold;
+}
+.light  p:nth-child(3) {
+    color: white;
+    opacity: 70%;
+}
+
+.dark h4 {
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+}
+.dark div p:nth-child(2){
+    color: hsl(0, 0%, 81%);
+}
+.dark p:nth-child(2) {
+    color: hsl(219, 29%, 14%);
+    opacity: 80%;
+    font-weight: bold;
+}
+.dark p:nth-child(3) {
+    color: hsl(219, 29%, 14%);
+    opacity: 60%;
+    line-height: 1.2rem;
+}
+
+article:nth-child(1){
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+    z-index: 10;
+}
+#bg-pattern {
+    width: fit-content;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    background-color: hsl(263, 55%, 52%);
+    z-index: 5
+}
+#bg-pattern img {
+    width: 5rem;
+    height: 5rem;
+    border: 0px;
+}
+article:nth-child(2){
+    background-color: hsl(217, 19%, 35%);
+}
+article:nth-child(3),:nth-child(4){
+    background-color: white;
+}
+article:nth-child(5){
+    background-color: hsl(219, 29%, 14%)
+}
+
+@media screen and (max-width: 1200px){
+    main {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    section {
+        display: block;
+    }
+    article:not(:first-child) {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-height: 690px){
+    main {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
